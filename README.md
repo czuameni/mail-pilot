@@ -38,7 +38,6 @@ Each email is sent individually, which ensures that recipients cannot see other 
 
 MailPilot supports simple template variables.
 
-Example template:
 # MailPilot – Email Campaign Automation Tool
 
 MailPilot is a desktop application built in Python that allows sending personalized email campaigns using a CSV contact list.
@@ -122,7 +121,7 @@ pip install -r requirements.txt
 
 # Running the Application
 
-Run the program
+Run the program.
 
 ---
 
@@ -150,9 +149,13 @@ The MailPilot GUI window will open.
 Contacts must be stored in CSV format.
 
 Example:
+
 email,name
+
 john@gmail.com,John
+
 anna@gmail.com,Anna
+
 mike@gmail.com,Mike
 
 Required columns:
@@ -198,8 +201,8 @@ You can stop the process anytime using **Stop Campaign**.
 MailPilot allows saving campaign settings.
 
 Save campaign
-Load campaign
 
+Load campaign
 
 Campaign settings are stored in JSON format.
 
