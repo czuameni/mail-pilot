@@ -106,15 +106,15 @@ Libraries:
 
 # Installation
 
-Clone the repository
+Clone the repository:
 git clone https://github.com/czuameni/mail-pilot.git
 
 
-Enter the project folder
+Enter the project folder:
 cd mail-pilot
 
 
-Install dependencies
+Install dependencies:
 pip install -r requirements.txt
 
 
@@ -128,7 +128,7 @@ Run the program
 
 # Running the Application
 
-Run the program
+Run the program:
 python main.py
 
 The MailPilot GUI window will open.
