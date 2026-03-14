@@ -1,4 +1,4 @@
-MailPilot – Email Campaign Automation Tool
+# MailPilot – Email Campaign Automation Tool
 
 MailPilot is a desktop application built in Python that allows sending personalized email campaigns using a CSV contact list.
 
@@ -6,109 +6,150 @@ The application connects to an SMTP server (for example Gmail), loads contacts f
 
 MailPilot is designed for:
 
-recruitment outreach
-
-lead generation
-
-customer communication
-
-automated follow-ups
-
-email campaign testing
+- recruitment outreach
+- lead generation
+- customer communication
+- automated follow-ups
+- email campaign testing
 
 Each email is sent individually, which ensures that recipients cannot see other addresses.
 
-Features
+---
 
-SMTP email sending
+# Features
 
-CSV contact import
+- SMTP email sending
+- CSV contact import
+- Personalized email templates
+- Email validation
+- Attachments support
+- Delay between emails
+- Campaign start / stop control
+- Campaign save / load
+- Contact preview
+- Live logs during sending
+- Progress bar
+- Desktop GUI application
+- Executable build support
 
-Personalized email templates
+---
 
-Email validation
-
-Attachments support
-
-Delay between emails
-
-Campaign start / stop control
-
-Campaign save / load
-
-Contact preview
-
-Live logs during sending
-
-Progress bar
-
-Desktop GUI application
-
-Executable build support
-
-Email Personalization
+# Email Personalization
 
 MailPilot supports simple template variables.
 
 Example template:
+# MailPilot – Email Campaign Automation Tool
 
+MailPilot is a desktop application built in Python that allows sending personalized email campaigns using a CSV contact list.
+
+The application connects to an SMTP server (for example Gmail), loads contacts from a CSV file, and sends individualized messages to each recipient.
+
+MailPilot is designed for:
+
+- recruitment outreach
+- lead generation
+- customer communication
+- automated follow-ups
+- email campaign testing
+
+Each email is sent individually, which ensures that recipients cannot see other addresses.
+
+---
+
+# Features
+
+- SMTP email sending
+- CSV contact import
+- Personalized email templates
+- Email validation
+- Attachments support
+- Delay between emails
+- Campaign start / stop control
+- Campaign save / load
+- Contact preview
+- Live logs during sending
+- Progress bar
+- Desktop GUI application
+- Executable build support
+
+---
+
+# Email Personalization
+
+MailPilot supports simple template variables.
+
+Example template:
 Hello {name},
-
 This is a test message sent with MailPilot.
 
-If the CSV file contains:
-
-email,name
-john@gmail.com,John
-anna@gmail.com,Anna
-
 The sent messages will automatically become:
-
 Hello John
 Hello Anna
-Technologies Used
+
+
+---
+
+# Technologies Used
 
 Python
 
 Libraries:
 
-CustomTkinter
+- CustomTkinter
+- Pandas
+- SMTP (smtplib)
+- JSON
+- Threading
 
-Pandas
+---
 
-SMTP (smtplib)
-
-JSON
-
-Threading
-
-Installation
+# Installation
 
 Clone the repository
-
 git clone https://github.com/czuameni/mail-pilot.git
 
-Enter the project folder
 
+Enter the project folder
 cd mail-pilot
 
-Install dependencies
 
+Install dependencies
 pip install -r requirements.txt
-Running the Application
+
+
+---
+
+# Running the Application
 
 Run the program
 
+---
+
+# Running the Application
+
+Run the program
 python main.py
 
 The MailPilot GUI window will open.
 
-CSV Contact Format
+---
+
+# CSV Contact Format
 
 Contacts must be stored in CSV format.
 
 Example:
 
+The MailPilot GUI window will open.
+
+---
+
+# CSV Contact Format
+
+Contacts must be stored in CSV format.
+
+Example:
 email,name
 john@gmail.com,John
 anna@gmail.com,Anna
@@ -116,63 +157,58 @@ mike@gmail.com,Mike
 
 Required columns:
 
-email
+- email
+- name
 
-name
+---
 
-Gmail Setup (App Password)
+# Gmail Setup (App Password)
 
 If you use Gmail, you must generate an App Password.
 
 Steps:
 
-Open your Google Account security settings
+1. Open your Google Account security settings
+2. Enable **2-Step Verification**
+3. Go to **App Passwords**
+4. Generate a password for **Mail**
+5. Use that password in the MailPilot **App Password** field
 
-Enable 2-Step Verification
+---
 
-Go to App Passwords
+# Usage
 
-Generate a password for Mail
-
-Use that password in the MailPilot App Password field
-
-Usage
-
-Enter the sender email address
-
-Enter the App Password
-
-Write the email subject
-
-Write the email body
-
-Set delay between messages
-
-(Optional) add attachment
-
-Load contacts from CSV
-
-Click Start Campaign
+1. Enter the sender email address  
+2. Enter the App Password  
+3. Write the email subject  
+4. Write the email body  
+5. Set delay between messages  
+6. (Optional) add attachment  
+7. Load contacts from CSV  
+8. Click **Start Campaign**
 
 The application will start sending emails one by one.
 
-You can stop the process anytime using Stop Campaign.
+You can stop the process anytime using **Stop Campaign**.
 
-Campaign Management
+---
+
+# Campaign Management
 
 MailPilot allows saving campaign settings.
 
-Save campaign:
+Save campaign
+Load campaign
 
-Save Campaign
-
-Load campaign:
-
-Load Campaign
 
 Campaign settings are stored in JSON format.
 
-Project Structure
+---
+
+# Project Structure
+
+Campaign settings are stored in JSON format.
+
 main.py
 gui.py
 smtp_client.py
@@ -188,37 +224,40 @@ INSTRUKCJA.txt
 
 examples.csv
 mailpilot.ico
-Application Interface
+
+---
+
+# Application Interface
 
 Main components:
 
-SMTP SETTINGS
+SMTP SETTINGS  
 Sender email and App Password
 
-CAMPAIGN
+CAMPAIGN  
 Subject, message body, delay and attachments
 
-CONTACTS
+CONTACTS  
 CSV import and contact preview
 
-CONTROL
+CONTROL  
 Start / Stop / Save / Load campaign
 
-LOGS
+LOGS  
 Real-time campaign activity
 
-Example Use Cases
+---
 
-recruitment outreach campaigns
+# Example Use Cases
 
-lead generation emails
+- recruitment outreach campaigns
+- lead generation emails
+- cold email testing
+- internal notification automation
+- marketing message distribution
 
-cold email testing
+---
 
-internal notification automation
-
-marketing message distribution
-
-License
+# License
 
 This project is released under the MIT License.
