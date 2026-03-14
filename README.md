@@ -260,6 +260,7 @@ This project is released under the MIT License.
 # Installation
 
 Clone the repository:
+
 git clone https://github.com/czuameni/mail-pilot.git
 
 
