@@ -103,22 +103,6 @@ Libraries:
 
 ---
 
-# Installation
-
-Clone the repository:
-git clone https://github.com/czuameni/mail-pilot.git
-
-
-Enter the project folder:
-cd mail-pilot
-
-
-Install dependencies:
-pip install -r requirements.txt
-
-
----
-
 # Running the Application
 
 Run the program.
@@ -264,3 +248,28 @@ Real-time campaign activity
 # License
 
 This project is released under the MIT License.
+
+## Application Preview
+
+### Main Interface
+![MailPilot Main](screenshots/mailpilot_main.png)
+
+### Campaign Setup
+![MailPilot Campaign](screenshots/mailpilot_campaign.png)
+
+# Installation
+
+Clone the repository:
+git clone https://github.com/czuameni/mail-pilot.git
+
+
+Enter the project folder:
+
+cd mail-pilot
+
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+---
