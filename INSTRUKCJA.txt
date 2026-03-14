@@ -1,0 +1,191 @@
+MAILPILOT — INSTRUKCJA OBSŁUGI
+
+MailPilot to aplikacja do automatycznego wysyłania spersonalizowanych emaili na podstawie listy kontaktów z pliku CSV.
+
+Program wysyła każdy email osobno, dzięki czemu odbiorcy nie widzą innych adresów.
+
+
+====================================
+1. WYMAGANIA
+====================================
+
+Aby korzystać z programu potrzebujesz:
+
+- konto email (np. Gmail)
+- App Password (hasło aplikacji)
+- plik CSV z kontaktami
+
+
+====================================
+2. PRZYGOTOWANIE KONTA GMAIL
+====================================
+
+Jeśli używasz Gmail:
+
+1. Wejdź na stronę:
+https://myaccount.google.com/security
+
+2. Włącz:
+Weryfikację dwuetapową
+
+3. Następnie przejdź do:
+Hasła do aplikacji (App Passwords)
+
+4. Utwórz nowe hasło dla aplikacji:
+Mail
+
+5. Google wygeneruje 16-znakowe hasło.
+
+To hasło wpisujesz w aplikacji MailPilot w polu:
+
+App Password
+
+
+====================================
+3. PRZYGOTOWANIE PLIKU CSV
+====================================
+
+Plik CSV musi mieć format:
+
+email,name
+
+Przykład:
+
+email,name
+john@gmail.com,John
+anna@gmail.com,Anna
+mike@gmail.com,Mike
+
+
+====================================
+4. URUCHOMIENIE PROGRAMU
+====================================
+
+Uruchom aplikację:
+
+python main.py
+
+lub uruchom plik MailPilot.exe.
+
+
+====================================
+5. KONFIGURACJA KAMPANII
+====================================
+
+SMTP SETTINGS
+
+Sender email
+adres email z którego wysyłane będą wiadomości
+
+App Password
+hasło aplikacji wygenerowane w Gmail
+
+
+CAMPAIGN
+
+Subject
+temat wiadomości
+
+Body
+treść wiadomości
+
+Można używać personalizacji:
+
+{name}
+
+Przykład:
+
+Hello {name},
+This is a test message.
+
+
+Delay seconds
+opóźnienie między wysyłką emaili
+
+
+Attachment
+możliwość dodania załącznika do wiadomości
+
+
+====================================
+6. WCZYTANIE LISTY KONTAKTÓW
+====================================
+
+Kliknij:
+
+Load CSV
+
+Wybierz plik z kontaktami.
+
+Program pokaże podgląd pierwszych kontaktów.
+
+
+====================================
+7. WYSYŁKA KAMPANII
+====================================
+
+Kliknij:
+
+Start Campaign
+
+Program zacznie wysyłać wiadomości.
+
+W dolnej części okna w sekcji LOGS widoczny jest przebieg wysyłki.
+
+
+====================================
+8. ZATRZYMANIE WYSYŁKI
+====================================
+
+Kliknij:
+
+Stop Campaign
+
+Program zatrzyma wysyłanie wiadomości.
+
+
+====================================
+9. ZAPISANIE KAMPANII
+====================================
+
+Kliknij:
+
+Save Campaign
+
+Program zapisze ustawienia kampanii do pliku JSON.
+
+
+====================================
+10. WCZYTANIE KAMPANII
+====================================
+
+Kliknij:
+
+Load Campaign
+
+Program wczyta zapisane ustawienia kampanii.
+
+
+====================================
+11. LOGI
+====================================
+
+Sekcja LOGS pokazuje:
+
+- połączenie z SMTP
+- wysłane wiadomości
+- błędy
+
+
+====================================
+12. BEZPIECZEŃSTWO
+====================================
+
+Każdy email wysyłany jest osobno.
+
+Odbiorcy nie widzą innych adresów email.
+
+
+====================================
+KONIEC
+====================================
