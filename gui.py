@@ -39,7 +39,6 @@ class MailPilotApp:
         main.grid_columnconfigure(0, weight=1)
         main.grid_columnconfigure(1, weight=1)
 
-        # ===== COLUMNS =====
 
         left = ctk.CTkFrame(main)
         left.grid(row=0, column=0, padx=20, sticky="nw")
@@ -49,7 +48,6 @@ class MailPilotApp:
 
         left.configure(width=420)
 
-        # ===== SMTP SECTION =====
 
         smtp_frame = ctk.CTkFrame(left)
         smtp_frame.pack(fill="x", pady=10)
@@ -62,7 +60,6 @@ class MailPilotApp:
         self.password_entry = ctk.CTkEntry(smtp_frame, placeholder_text="App Password", show="*")
         self.password_entry.pack(pady=5)
 
-        # ===== CONTACTS SECTION =====
 
         contacts_frame = ctk.CTkFrame(left)
         contacts_frame.pack(fill="x", pady=10)
@@ -78,7 +75,6 @@ class MailPilotApp:
         self.preview_box = ctk.CTkTextbox(contacts_frame, height=120)
         self.preview_box.pack(fill="x", expand=True, pady=5)
 
-        # ===== CAMPAIGN SECTION =====
 
         campaign_frame = ctk.CTkFrame(right)
         campaign_frame.pack(fill="x", pady=10)
@@ -100,7 +96,6 @@ class MailPilotApp:
         self.attachment_label = ctk.CTkLabel(campaign_frame, text="No attachment")
         self.attachment_label.pack()
 
-        # ===== CONTROL SECTION =====
 
         control_frame = ctk.CTkFrame(right)
         control_frame.pack(fill="x", pady=10)
@@ -128,13 +123,11 @@ class MailPilotApp:
         load_btn = ctk.CTkButton(right_buttons, text="Load Campaign", command=self.load_campaign)
         load_btn.pack(pady=5)
 
-        # ===== PROGRESS =====
 
         self.progress = ctk.CTkProgressBar(self.main_frame)
         self.progress.pack(fill="x", padx=40, pady=10)
         self.progress.set(0)
 
-        # ===== LOGS =====
 
         logs_frame = ctk.CTkFrame(self.main_frame)
         logs_frame.pack(fill="both", expand=True, padx=20, pady=10)
